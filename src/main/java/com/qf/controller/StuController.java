@@ -46,6 +46,10 @@ public class StuController {
         stuService.addstu(student);
         return "redirect:/stu/list";
     }
+    @RequestMapping("/queryone/{id}")
+    public  String queryById(@PathVariable("id") Integer id){
+        return null;
+    }
     @RequestMapping("/update")
     public String update(Student student){
         return  null;
