@@ -46,5 +46,8 @@ public class StuController {
         stuService.addstu(student);
         return "redirect:/stu/list";
     }
-
+    @RequestMapping("/update")
+    public String update(Student student){
+        return  null;
+    }
 }
